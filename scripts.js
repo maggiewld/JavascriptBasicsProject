@@ -29,20 +29,25 @@ alert(shout);
 */
 
 //Story Maker Code-----------------------------------------
-/*
 "<h2> There once was a [Adjective] [Noun] that was the [Adjective] in the world!</h2>"
 
 alert("Time to write a story!")
-var firstWord = prompt("Input an adjective");
-var secondWord = prompt ("Input a noun");
-var thirdWord = prompt ("Input another adjective")
+var questions = 3;
+var questionsLeft = " [" + questions + " questions left]"
+var firstWord = prompt("Input an adjective" + questionsLeft);
+questions -= 1;
+questionsLeft = " [" + questions + " questions left]";
+var secondWord = prompt ("Input a noun" + questionsLeft);
+questions -= 1;
+questionsLeft = " [" + questions + " questions left]";
+var thirdWord = prompt ("Input another adjective" +questionsLeft);
 alert("All done!")
 var message = "<h2>There once was a " + firstWord
 message += " " + secondWord;
 message += " that was the " + thirdWord;
 message += " " + secondWord + " in the world!</h2>"
 document.write(message);
-*/
+
 
 //Time Calculator Code ------------------------------------
 /*
