@@ -29,6 +29,7 @@ alert(shout);
 */
 
 //Story Maker Code-----------------------------------------
+/*
 "<h2> There once was a [Adjective] [Noun] that was the [Adjective] in the world!</h2>"
 
 alert("Time to write a story!")
@@ -41,3 +42,18 @@ message += " " + secondWord;
 message += " that was the " + thirdWord;
 message += " " + secondWord + " in the world!</h2>"
 document.write(message);
+*/
+
+//Time Calculator Code ------------------------------------
+var secondsPerMin = 60;
+var minsPerHour = 60;
+var hoursPerDay = 24;
+var daysPerWeek = 7;
+var weeksPerYear = 52;
+var secondsPerDay = secondsPerMin * minsPerHour * hoursPerDay;
+document.write("There are " + secondsPerDay + " seconds in a day.");
+var yearsAlive = 28;
+var weeksAlive = yearsAlive * weeksPerYear;
+var daysAlive = weeksAlive * daysPerWeek;
+var secondsAlive = daysAlive * secondsPerDay;
+document.write(" I\'ve been alive for more than " + secondsAlive + " seconds.");
