@@ -29,6 +29,7 @@ alert(shout);
 */
 
 //Story Maker Code-----------------------------------------
+/*
 "<h2> There once was a [Adjective] [Noun] that was the [Adjective] in the world!</h2>"
 
 alert("Time to write a story!")
@@ -47,7 +48,7 @@ message += " " + secondWord;
 message += " that was the " + thirdWord;
 message += " " + secondWord + " in the world!</h2>"
 document.write(message);
-
+*/
 
 //Time Calculator Code ------------------------------------
 /*
@@ -72,3 +73,7 @@ var cssBadges = prompt("How many CSS badges do you have?");
 var totalBadges = parseInt(htmlBadges) + parseInt (cssBadges); //parseInt to convert string to integer
 alert("Wow! You have " + totalBadges + " badges!");
 */
+
+//Creating a random number --------------------------------
+var dieRoll = Math.floor(Math.random() * 6)+1
+alert("You rolled a " + dieRoll);
