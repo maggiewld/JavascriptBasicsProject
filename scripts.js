@@ -74,6 +74,17 @@ var totalBadges = parseInt(htmlBadges) + parseInt (cssBadges); //parseInt to con
 alert("Wow! You have " + totalBadges + " badges!");
 */
 
-//Creating a random number --------------------------------
+//Creating a random number (die roll) ---------------------
+/*
 var dieRoll = Math.floor(Math.random() * 6)+1
 alert("You rolled a " + dieRoll);
+*/
+
+//Random Number Generator Challenge -----------------------
+var inputMin = prompt("Input minimum number");
+var minNumber = parseInt(inputMin);
+var inputMax = prompt("Input maximum number");
+var maxNumber = parseInt(inputMax);
+var randomNumber = Math.floor(Math.random()*(maxNumber-minNumber+1))+ minNumber;
+var message = "<p>" + randomNumber + " is a number betweeen " + minNumber + " and " + maxNumber + ".</p>";
+document.write(message);
