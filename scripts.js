@@ -139,6 +139,7 @@ if (correctGuess) {
 */
 
 // Quiz Challenge------------------------------------------
+/*
 var correct = 0;
 
   //Questions
@@ -181,3 +182,19 @@ if (correct === 5) {
 } else {
   document.write("<p><strong>Better luck next time!</strong></p>");
 }
+*/
+
+// Functions ----------------------------------------------
+function alertRandom() {
+  var randomNumber = Math.floor( Math.random() * 6 ) + 1;
+  alert(randomNumber);
+}
+
+alertRandom(); //to call function
+
+  //also see function expressions
+    var alertRandom = function () {
+        var randomNumber = Math.floor(Math.random() * 6 ) + 1;
+        alert(randomNumber);
+    };
+    alertRandom();
