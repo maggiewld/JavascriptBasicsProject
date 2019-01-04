@@ -185,16 +185,20 @@ if (correct === 5) {
 */
 
 // Functions ----------------------------------------------
-function alertRandom() {
+function getRandomNumber() {
   var randomNumber = Math.floor( Math.random() * 6 ) + 1;
-  alert(randomNumber);
+  return(randomNumber);
 }
 
-alertRandom(); //to call function
+alert(getRandomNumber()); //to call function
+console.log(getRandomNumber());
+var dieRoll = getRandomNumber();
 
-  //also see function expressions
+    //also see function expressions
+  /*
     var alertRandom = function () {
         var randomNumber = Math.floor(Math.random() * 6 ) + 1;
         alert(randomNumber);
     };
     alertRandom();
+  */
