@@ -102,7 +102,7 @@ if (answer.toUpperCase() === "RUBY") { //.toUpperCase negates problem of differe
 */
 
 // Random Number Guessing Game-----------------------------
-
+/*
   //Starting assumption = guess is false.
 var correctGuess = false;
 
@@ -115,7 +115,7 @@ var guess = prompt("I'm thinking of a number between 1 and 6. What is it?");
     1. Guess correct
     2. Guess too low
     3. Guess too high
-  */
+  *
 if (parseInt(guess) === randomNumber) {
   correctGuess = true;
 } else if (parseInt(guess) < randomNumber) {
@@ -130,9 +130,54 @@ if (parseInt(guess) === randomNumber) {
     }
 }
 
-// Responses for correct/incorrect answers
+  // Responses for correct/incorrect answers
 if (correctGuess) {
   document.write("<p>You guessed the number!</p>");
 } else {
   document.write("<p>Sorry. The number was " + randomNumber + ".</p>");
+}
+*/
+
+// Quiz Challenge------------------------------------------
+var correct = 0;
+
+  //Questions
+var answerOne = prompt("First Question?");
+  console.log(answerOne);
+  if (answerOne.toUpperCase() === "YES" || answerOne.toUpperCase() === "Y") {
+    correct += 1;
+  }
+var answerTwo = prompt("Second Question?");
+  console.log(answerTwo);
+  if (answerTwo.toUpperCase() === "YES" || answerTwo.toUpperCase() === "Y") {
+    correct += 1;
+  }
+var answerThree = prompt("Third Question?");
+  console.log(answerThree);
+  if (answerThree.toUpperCase() === "YES" || answerThree.toUpperCase() === "Y") {
+    correct += 1;
+  }
+var answerFour = prompt("Forth Question?");
+  console.log(answerFour);
+  if (answerFour.toUpperCase() === "YES" || answerFour.toUpperCase() === "Y") {
+    correct += 1;
+  }
+var answerFive = prompt("Fifth Question?");
+  console.log(answerFive);
+  if (answerFive.toUpperCase() === "YES" || answerFive.toUpperCase() === "Y") {
+    correct += 1;
+  }
+
+  // Output Results
+document.write("<p>You got " + correct + " out of 5 questions.</p>")
+
+  // Output Rank
+if (correct === 5) {
+  document.write("<p><strong>You earned a gold crown!</strong></p>");
+} else if (correct >= 3) {
+  document.write("<p><strong>You earned a silver crown!</strong></p>");
+} else if (correct >= 2) {
+  document.write("<p><strong>You earned a bronze crown!</strong></p>");
+} else {
+  document.write("<p><strong>Better luck next time!</strong></p>");
 }
