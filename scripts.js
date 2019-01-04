@@ -102,9 +102,20 @@ if (answer.toUpperCase() === "RUBY") { //.toUpperCase negates problem of differe
 */
 
 // Random Number Guessing Game-----------------------------
+
+  //Starting assumption = guess is false.
 var correctGuess = false;
+
+  // Generate random number between 1 and 6.
 var randomNumber = Math.floor(Math.random() * 6 ) + 1;
+
 var guess = prompt("I'm thinking of a number between 1 and 6. What is it?");
+
+  /*Testing for following:
+    1. Guess correct
+    2. Guess too low
+    3. Guess too high
+  */
 if (parseInt(guess) === randomNumber) {
   correctGuess = true;
 } else if (parseInt(guess) < randomNumber) {
@@ -119,6 +130,7 @@ if (parseInt(guess) === randomNumber) {
     }
 }
 
+// Responses for correct/incorrect answers
 if (correctGuess) {
   document.write("<p>You guessed the number!</p>");
 } else {
