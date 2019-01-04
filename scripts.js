@@ -92,9 +92,20 @@ document.write(message);
 */
 
 // Conditional Statements Quiz ----------------------------
+/*
 var answer = prompt("What programming language is the name of a gem?");
 if (answer.toUpperCase() === "RUBY") { //.toUpperCase negates problem of different case returning incorrect answer
   document.write("<p>That's right!</p>");
 } else {
   document.write("<p>Sorry, that's wrong...</p>");
+}
+*/
+
+// Random Number Guessing Game-----------------------------
+var randomNumber = Math.floor(Math.random() * 6 ) + 1;
+var guess = prompt("I'm thinking of a number between 1 and 6. What is it?");
+if (parseInt(guess) === randomNumber) {
+  document.write("<p>You guessed the number!</p>");
+} else {
+  document.write("<p>Sorry, the number was " + randomNumber + "</p>");
 }
