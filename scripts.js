@@ -81,15 +81,22 @@ alert("You rolled a " + dieRoll);
 */
 
 //Random Number Generator Challenge -----------------------
-/*
-var inputMin = prompt("Input minimum number");
+/*var inputMin = prompt("Input minimum number");
 var minNumber = parseInt(inputMin);
+
 var inputMax = prompt("Input maximum number");
 var maxNumber = parseInt(inputMax);
+
 var randomNumber = Math.floor(Math.random()*(maxNumber-minNumber+1))+ minNumber;
+
 var message = "<p>" + randomNumber + " is a number betweeen " + minNumber + " and " + maxNumber + ".</p>";
 document.write(message);
 */
+function getRandomNumber(lower,upper) {
+  return Math.floor(Math.random()*(upper-lower+1))+lower;
+}
+console.log(getRandomNumber(1,6));
+console.log(getRandomNumber(10,200));
 
 // Conditional Statements Quiz ----------------------------
 /*
@@ -185,6 +192,7 @@ if (correct === 5) {
 */
 
 // Functions ----------------------------------------------
+/*
 function getRandomNumber(upper) {
   var randomNumber = Math.floor( Math.random() * upper ) + 1;
   return(randomNumber);
