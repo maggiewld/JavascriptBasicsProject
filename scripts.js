@@ -93,10 +93,19 @@ var message = "<p>" + randomNumber + " is a number betweeen " + minNumber + " an
 document.write(message);
 */
 function getRandomNumber(lower,upper) {
+  if (isNaN(lower) || isNaN(upper)) {
+    throw new Error("One or more value is not a number.");
+  } 
   return Math.floor(Math.random()*(upper-lower+1))+lower;
 }
+
+
 console.log(getRandomNumber(1,6));
 console.log(getRandomNumber(10,200));
+console.log(getRandomNumber("fifty", 900));
+console.log(getRandomNumber(75, "thousand"));
+
+
 
 // Conditional Statements Quiz ----------------------------
 /*
